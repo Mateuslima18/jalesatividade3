@@ -1,1 +1,80 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Formulário de Revisão</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            margin: 20px;  
+        }  
+        label {  
+            display: block;  
+            margin-top: 10px;  
+        }  
+        input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="number"], input[type="url"] {  
+            width: 60%;  
+            padding: 8px;  
+            margin-top: 5px;  
+        }  
+        input[type="radio"], input[type="checkbox"] {  
+            margin-top: 5px;  
+        }  
+        button {  
+            margin-top: 20px;  
+            padding: 10px 15px;  
+            display: flex;
+        }  
+    </style>  
+</head>  
+<body>  
 
+    <h1>Atividade de Revisão 01</h1>  
+    <form>  
+        <label for="nome">Qual o seu nome:</label>  
+        <input type="text" id="nome" name="nome" required>  
+
+        <label for="email">Qual seu email:</label>  
+        <input type="email" id="email" name="email" required>  
+
+        <label for="senha">Qual a sua senha:</label>  
+        <input type="password" id="senha" name="senha" required>  
+
+        <label for="nascimento">Nascimento:</label>  
+        <input type="date" id="nascimento" name="nascimento" required>  
+
+        <label for="telefone">Qual o seu telefone:</label>  
+        <input type="text" id="telefone" name="telefone" required>  
+
+        <label>Qual o seu sexo:</label>  
+        <input type="radio" id="feminino" name="sexo" value="feminino">  
+        <label for="feminino">Feminino</label>  
+        <input type="radio" id="masculino" name="sexo" value="masculino">  
+        <label for="masculino">Masculino</label>  
+
+        <label for="hobbies">Quais seus hobbies:</label>  
+        <input type="checkbox" id="ler" name="hobbies" value="ler">  
+        <label for="ler">Ler</label>  
+        <input type="checkbox" id="esportes" name="hobbies" value="esportes">  
+        <label for="esportes">Esportes</label>  
+        <input type="checkbox" id="videoGames" name="hobbies" value="videoGames">  
+        <label for="videoGames">Video Games</label>  
+
+        <label for="corFavorita">Qual sua cor favorita:</label>  
+        <input type="color" id="corFavorita" name="corFavorita" value="#000000">  
+
+        <label for="nota">Qual nota você dá para seu fim de semana (de 1 a 10):</label>  
+        <input type="number" id="nota" name="nota" min="1" max="10" required>  
+
+        <label for="linkPagina">Qual o link da sua página:</label>  
+        <input type="url" id="linkPagina" name="linkPagina" required>  
+
+        <label for="horario">Que horas são:</label>  
+        <input type="time" /> 
+
+        <button type="submit">Enviar</button>  
+    </form>  
+<a href="atividade2.html">vá para pagina 2</a>
+</body>  
+</html>
